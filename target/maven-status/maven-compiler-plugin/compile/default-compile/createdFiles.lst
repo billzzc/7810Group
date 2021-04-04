@@ -1,0 +1,12 @@
+com/main/entity/User.class
+com/main/controller/UserController.class
+com/main/controller/model/UserReq.class
+com/main/mapper/UserMapper.class
+com/main/service/Impl/UserServiceImpl.class
+com/main/service/UserService.class
+com/main/utils/ResponseMessage.class
+com/main/controller/PredictController.class
+com/main/service/Impl/PredictServiceImpl.class
+com/main/controller/model/rateReq.class
+com/main/Application.class
+com/main/controller/model/illReq.class
