@@ -1,4 +1,4 @@
-package com.main.service;
+package com.main.service.Impl;
 
 import com.main.controller.model.illReq;
 import com.main.controller.model.rateReq;
@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
-public class PredictService {
+public class PredictServiceImpl {
 
     public String ill(illReq req) {
 

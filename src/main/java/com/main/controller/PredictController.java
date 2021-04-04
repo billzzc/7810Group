@@ -2,7 +2,7 @@ package com.main.controller;
 
 import com.main.controller.model.illReq;
 import com.main.controller.model.rateReq;
-import com.main.service.PredictService;
+import com.main.service.Impl.PredictServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,18 +13,18 @@ import org.springframework.web.bind.annotation.RestController;
 public class PredictController {
 
     @Autowired
-    PredictService predictService;
+    PredictServiceImpl predictServiceImpl;
 
     @RequestMapping("/ill")
     public String ill(@RequestBody illReq req) {
 
-        return predictService.ill(req);
+        return predictServiceImpl.ill(req);
     }
 
     @RequestMapping("/rate")
     public String rate(@RequestBody rateReq req) {
 
-        return predictService.rate(req);
+        return predictServiceImpl.rate(req);
     }
 
 
