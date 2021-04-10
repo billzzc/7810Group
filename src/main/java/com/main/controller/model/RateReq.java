@@ -3,7 +3,7 @@ package com.main.controller.model;
 import lombok.Data;
 
 @Data
-public class rateReq {
+public class RateReq {
 
     private String age;
     private String sex;

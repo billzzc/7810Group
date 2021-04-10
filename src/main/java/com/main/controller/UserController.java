@@ -1,7 +1,6 @@
 package com.main.controller;
 
 import com.main.controller.model.UserReq;
-import com.main.controller.model.illReq;
 import com.main.entity.User;
 import com.main.service.Impl.UserServiceImpl;
 import com.main.utils.ResponseMessage;

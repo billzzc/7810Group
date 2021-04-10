@@ -1,8 +1,9 @@
 package com.main.controller;
 
-import com.main.controller.model.illReq;
-import com.main.controller.model.rateReq;
+import com.main.controller.model.IllReq;
+import com.main.controller.model.RateReq;
 import com.main.service.Impl.PredictServiceImpl;
+import com.main.utils.ResponseMessage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,15 +17,16 @@ public class PredictController {
     PredictServiceImpl predictServiceImpl;
 
     @RequestMapping("/ill")
-    public String ill(@RequestBody illReq req) {
+    public ResponseMessage ill(@RequestBody IllReq req) {
 
-        return predictServiceImpl.ill(req);
+        //1: 有风险，0: 无风险
+        return ResponseMessage.newOkInstance(predictServiceImpl.ill(req),"预测成功");
     }
 
     @RequestMapping("/rate")
-    public String rate(@RequestBody rateReq req) {
+    public ResponseMessage rate(@RequestBody RateReq req) {
 
-        return predictServiceImpl.rate(req);
+        return ResponseMessage.newOkInstance(predictServiceImpl.rate(req),"预测成功");
     }
 
 
