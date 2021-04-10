@@ -1,6 +1,7 @@
 package com.main.service.Impl;
 
 import com.main.controller.model.UserReq;
+import com.main.entity.Info;
 import com.main.entity.User;
 import com.main.mapper.UserMapper;
 import com.main.service.UserService;
@@ -22,6 +23,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User login(UserReq userReq) {
+        log.info("========>调用login方法");
         User user = new User();
         user.setUserName(userReq.getUserName());
         user.setPassWord(userReq.getPassWord());

@@ -3,9 +3,9 @@
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
-    <properties resource="mybatis-generator/generator.properties"/>
+<!--    <properties resource="mybatis-generator/generator.properties"/>-->
     <!--    连接数据库jar包的路径-->
-    <classPathEntry location="d:/java/JavaTools/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48-bin.jar"/>
+<!--    <classPathEntry location="d:/java/JavaTools/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48-bin.jar"/>-->
     <context id="DB2Tables"  targetRuntime="MyBatis3">
         <commentGenerator>
             <property name="suppressDate" value="true"/>
@@ -16,9 +16,9 @@
         <!--数据库连接参数 -->
         <jdbcConnection
                 driverClass="com.mysql.jdbc.Driver"
-                connectionURL="jdbc:mysql://localhost:3306/booksys?serverTimezone=UTC&useSSL=true"
-                userId="xxx"
-                password="xxx">
+                connectionURL="jdbc:mysql://121.5.231.227:3306/7810?useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=true&amp;serverTimezone=UTC"
+                userId="root"
+                password="zhangzhi">
         </jdbcConnection>
 
         <javaTypeResolver>

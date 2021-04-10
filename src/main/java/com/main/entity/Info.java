@@ -3,6 +3,10 @@ package com.main.entity;
 import java.util.Date;
 
 public class Info {
+    private Float weight;
+
+    private Float height;
+
     private Integer id;
 
     private Integer uid;
@@ -179,6 +183,22 @@ public class Info {
 
     public Float getDpf() {
         return dpf;
+    }
+
+    public Float getWeight() {
+        return weight;
+    }
+
+    public void setWeight(Float weight) {
+        this.weight = weight;
+    }
+
+    public Float getHeight() {
+        return height;
+    }
+
+    public void setHeight(Float height) {
+        this.height = height;
     }
 
     public void setDpf(Float dpf) {

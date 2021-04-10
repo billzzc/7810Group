@@ -7,8 +7,17 @@ spring:
   datasource:
     username: root
     password: zhangzhi
-    url: jdbc:mysql://121.5.231.227:3306/7810?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    url: jdbc:mysql://121.5.231.227:3306/7810?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC&autoReconnect=true
     driver-class-name: com.mysql.jdbc.Driver
+    hikari:
+      connection-test-query: SELECT 1 FROM DUAL
+      connection-timeout: 600000
+      maximum-pool-size: 500
+      max-lifetime: 60000
+      minimum-idle: 20
+      validation-timeout: 3000
+      idle-timeout: 60000
+      connection-init-sql: SET NAMES utf8mb4
 
 mybatis:
   mapper-locations: classpath:mapping/*Mapper.xml

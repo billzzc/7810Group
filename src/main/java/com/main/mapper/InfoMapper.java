@@ -26,4 +26,6 @@ public interface InfoMapper {
     int updateByPrimaryKeySelective(Info record);
 
     int updateByPrimaryKey(Info record);
+
+    List<Info> selectLatestInfo(int id);
 }
